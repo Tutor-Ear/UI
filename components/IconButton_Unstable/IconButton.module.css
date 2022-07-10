@@ -1,0 +1,51 @@
+.root {
+  @apply items-center transition ease-in-out duration-150 text-center 
+  text-accent-0 cursor-pointer rounded-none font-medium 
+  p-2.5 text-sm inline-flex border-transparent focus:z-10 
+  focus:ring-2 focus:ring-gray-200;
+}
+
+.root:hover {
+  @apply border-accent-9 bg-accent-6;
+}
+
+.root:focus {
+  @apply shadow-outline-normal outline-none;
+}
+
+.rounded {
+  @apply rounded-lg;
+}
+
+.circle {
+  @apply rounded-full;
+}
+
+.ghost {
+  @apply bg-accent-0 text-accent-9 border border-accent-2;
+}
+
+.ghost:hover {
+  @apply border-accent-9 bg-accent-9 children:text-accent-0;
+}
+
+.xs {
+  @apply p-1.5;
+}
+
+.sm {
+  @apply p-2;
+}
+
+.disabled,
+.disabled:hover {
+  @apply text-accent-4 border-accent-2 bg-accent-1 cursor-not-allowed transition ease-in-out duration-150;
+  filter: grayscale(1);
+  -webkit-transform: translateZ(0);
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+}
+
+.disabled:focus {
+  @apply ring-0 outline-none;
+}

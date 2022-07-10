@@ -1,0 +1,19 @@
+.root {
+  @apply w-4 h-4 checked:text-black focus:ring-black dark:focus:ring-white dark:text-white border border-gray-300 dark:bg-gray-700 dark:border-gray-600;
+}
+
+.disabled {
+  @apply checked:text-gray-200;
+}
+
+.label {
+  @apply text-sm font-medium text-gray-900 dark:text-gray-300;
+}
+
+.label-disabled {
+  @apply text-sm font-medium text-gray-400 dark:text-gray-500;
+}
+
+.helperText {
+  @apply text-xs font-normal text-gray-500 dark:text-gray-300;
+}

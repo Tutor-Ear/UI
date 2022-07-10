@@ -1,0 +1,23 @@
+.root {
+  @apply text-accent-0 font-medium text-sm text-center items-center h-4 w-4;
+}
+
+.ghost {
+  @apply text-accent-9;
+}
+
+.ghost:hover {
+  @apply text-accent-0;
+}
+
+.xs {
+  @apply h-3 w-3;
+}
+
+.sm {
+  @apply h-3.5 w-3.5;
+}
+
+.iconOnly {
+  @apply text-accent-9;
+}

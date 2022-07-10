@@ -1,0 +1,55 @@
+.root {
+  @apply w-full h-6 rounded-full appearance-none 
+  cursor-pointer bg-transparent overflow-hidden;
+}
+
+.root:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+.root::-webkit-slider-runnable-track {
+  @apply h-2 w-full rounded-full bg-accent-2;
+}
+
+.root::-webkit-slider-thumb {
+  @apply relative h-6 w-6 border-none rounded-full bg-accent-0 text-accent-9;
+  -webkit-appearance: none;
+  top: 50%;
+  transform: translateY(-50%);
+  --filler-size: 100rem;
+  --filler-offset: 0.6rem;
+  box-shadow: 0 0 0 3px black inset,
+    calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
+}
+
+.root:disabled {
+  @apply cursor-not-allowed;
+  filter: grayscale(1);
+}
+
+.root:disabled::-webkit-slider-thumb {
+  @apply bg-accent-0 text-accent-3;
+  --filler-size: 100rem;
+  --filler-offset: 0.6rem;
+  box-shadow: 0 0 0 3px gray inset,
+    calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
+}
+
+.small {
+  @apply h-4;
+}
+
+.small::-webkit-slider-runnable-track {
+  @apply h-1 w-full rounded-full bg-accent-2;
+}
+
+.small::-webkit-slider-thumb {
+  @apply h-4 w-4;
+  -webkit-appearance: none;
+  top: 50%;
+  transform: translateY(-50%);
+  --filler-size: 100rem;
+  --filler-offset: 0.6rem;
+  box-shadow: 0 0 0 3px black inset,
+    calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
+}

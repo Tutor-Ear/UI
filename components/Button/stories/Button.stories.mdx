@@ -1,0 +1,46 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+
+import Button from "../Button";
+import { HStack } from "../../../layouts/Stack";
+
+<Meta title="Components/Button" component={Button} />
+
+export const Template = (args) => <Button {...args} />;
+
+# Button
+
+let's define a story for our `Button` component.
+
+<Canvas>
+  <Story args={{ label: "Button" }} name="Primary Button">
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+You can create rounded button by using `rounded` props.
+
+<Canvas>
+  <Story args={{ label: "Button", rounded: true }} name="Rounded Button">
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+Button has Three different variants; `slim`, `flat`, `ghost`.
+
+<Canvas>
+  <Story name="Slim button">
+    <HStack>
+      <Button variant="slim" label="Slim Button" />
+      <Button variant="flat" label="Flat Button" />
+      <Button variant="ghost" label="Ghost Button" />
+    </HStack>
+  </Story>
+</Canvas>
+
+Disabled buttons by using `disabled` props to set `true` value.
+
+<Canvas>
+  <Story args={{ label: "Button", disabled: true }} name="Disabled Button">
+    {Template.bind({})}
+  </Story>
+</Canvas>

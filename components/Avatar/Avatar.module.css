@@ -1,0 +1,23 @@
+.root {
+  @apply rounded-full;
+}
+
+.border {
+  @apply border-2 border-white dark:border-gray-800;
+}
+
+.label {
+  @apply flex items-center justify-center text-xs font-medium border-2 border-white rounded-full bg-gray-100 dark:bg-gray-600 dark:border-gray-800 text-gray-400;
+}
+
+.hasMore {
+  @apply flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-500 border-2  border-white rounded-full;
+}
+
+.dot {
+  @apply bottom-0 left-7 absolute w-3.5 h-3.5 border-2 border-white dark:border-gray-800 rounded-full;
+}
+
+.ping {
+  @apply animate-ping;
+}

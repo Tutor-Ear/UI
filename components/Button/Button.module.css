@@ -1,0 +1,45 @@
+.root {
+  @apply cursor-pointer rounded-none inline-flex 
+  px-5 py-2 leading-6 transition ease-in-out duration-150
+  shadow-sm text-center justify-center uppercase border 
+  focus:outline-none border-transparent items-center text-sm 
+  font-semibold tracking-wide focus:z-10 focus:ring-2 focus:ring-gray-200;
+  max-height: 64px;
+}
+
+.root:hover {
+  @apply border-accent-9 bg-accent-6;
+}
+
+.root:focus {
+  @apply shadow-outline-normal outline-none;
+}
+
+.root[data-active] {
+  @apply bg-accent-6;
+}
+
+.rounded {
+  @apply rounded-full;
+}
+
+.slim {
+  @apply py-1 transform-none normal-case;
+}
+
+.ghost {
+  @apply border border-accent-2 bg-accent-0 text-accent-9 text-sm;
+}
+
+.ghost:hover {
+  @apply border-accent-9 bg-accent-9 text-accent-0;
+}
+
+.disabled,
+.disabled:hover {
+  @apply text-accent-4 border-accent-2 bg-accent-1 cursor-not-allowed;
+  filter: grayscale(1);
+  -webkit-transform: translateZ(0);
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+}
