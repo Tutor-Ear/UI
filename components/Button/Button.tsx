@@ -1,13 +1,13 @@
 import { __DEV__ } from "@tutor-ear/ui/utils";
 import clsx from "clsx";
-import React from "react";
+import React, { forwardRef } from "react";
 
 import style from "./Button.module.css";
 import { ButtonProps } from "./ButtonProps";
 
-const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  (props, ref) => {
-    const {
+const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+  (
+    {
       label,
       disabled = false,
       type = "button",
@@ -18,8 +18,9 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       bgColorScheme,
       textColorScheme,
       ...rest
-    } = props;
-
+    },
+    ref
+  ) => {
     const rootClassName = clsx(
       style.root,
       !bgColorScheme ? "bg-accent-9" : bgColorScheme,

@@ -16,17 +16,17 @@ const Template: ComponentStory<typeof Radio> = (args) => <Radio {...args} />;
 
 export const Default = Template.bind({});
 
-export const F = () => (
+export const Group = () => (
   <HStack>
-    <Radio id="s" label="Test" value="s" />
-    <Radio id="s2" label="Test2" value="s2" />
+    <Radio groupName="group1" id="s" label="Test" value="s" />
+    <Radio groupName="group1" id="s2" label="Test2" value="s2" />
   </HStack>
 );
 
-export const F2 = () => (
+export const Inline = () => (
   <div>
     <label className="inline-flex items-center">
-      <input type="checkbox" checked />
+      <input type="radio" checked />
       <span className="ml-2">Email me news and special offers</span>
     </label>
   </div>

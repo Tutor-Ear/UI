@@ -9,11 +9,11 @@ export default {
   title: "Components/IconButton",
   component: IconButton,
   parameters: {
-    componentSubtitle: "IconButton Subtitle!",
+    componentSubtitle: "버튼은 버튼인데 아이콘만 있는 버튼",
   },
 } as ComponentMeta<typeof IconButton>;
 
-const Template: ComponentStory<typeof IconButton> = (args) => (
+const Template: ComponentStory<typeof IconButton> = () => (
   <IconButton icon={PlusIcon} />
 );
 

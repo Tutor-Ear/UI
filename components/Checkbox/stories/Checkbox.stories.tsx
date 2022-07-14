@@ -8,7 +8,7 @@ export default {
   title: "Components/Checkbox",
   component: Checkbox,
   parameters: {
-    componentSubtitle: "Subtitle!",
+    componentSubtitle: "체크!",
   },
 } as ComponentMeta<typeof Checkbox>;
 

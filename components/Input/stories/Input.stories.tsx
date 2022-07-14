@@ -1,5 +1,5 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import * as React from "react";
+import React from "react";
 
 import Input from "../Input";
 import { InputAddon } from "../InputAddon";
@@ -8,8 +8,7 @@ export default {
   title: "Components/Input",
   component: Input,
   parameters: {
-    componentSubtitle:
-      "Displays an image that represents a user or organization",
+    componentSubtitle: "뭔가를 입력하고 싶을 때...",
   },
 } as ComponentMeta<typeof Input>;
 
@@ -84,7 +83,7 @@ Vaildation.args = {
   label: "Password",
   type: "password",
   placeholder: "Add Password",
-  vaildationFn: (e) => isMatch(e as string),
+  // vaildationFn: (e) => isMatch(e as string),
   icon: <MessageIcon />,
 };
 

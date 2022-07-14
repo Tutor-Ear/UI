@@ -2,23 +2,23 @@ import { ColorProps } from "@tutor-ear/ui/system";
 
 export interface BadgeProps {
   /**
-   * Text value to display on badge label.
+   * Badge 레이블에 표기할 텍스트 값
    */
   label: string;
   /**
-   * Badge Size Value
+   * Badge 사이즈
    */
   size?: "xs" | "lg";
   /**
-   * If `true`, mark the Bullet on the Badge.
+   * Bullet 을 Badge 에 표기할 지 결정
    */
   hasBullet?: boolean;
   /**
-   * If `true`, round the edge of the badge.
+   * Badge 모서리를 둥글게 만들지 결정
    */
-  rounded: boolean;
+  rounded?: boolean;
   /**
-   * Values for Badge color.
+   * Badge 색상
    */
   color?: ColorProps["default"];
 }

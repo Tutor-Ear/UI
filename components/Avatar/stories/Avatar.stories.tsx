@@ -58,7 +58,8 @@ Sizes.args = {
  */
 Sizes.parameters = {
   docs: {
-    storyDescription: "4 sizes are supported. You can adjust by `size` props.",
+    storyDescription:
+      "4가지 사이즈를 지원합니다. `size`프로퍼티를 설정해보세요.",
   },
 };
 
@@ -75,7 +76,7 @@ NoImage.parameters = {
   },
 };
 
-export const StackedAvatars: ComponentStory<typeof Avatar> = (args) => (
+export const StackedAvatars: ComponentStory<typeof Avatar> = () => (
   <HStack>
     <AvatarStack>
       <Avatar
@@ -126,11 +127,11 @@ export const StackedAvatars: ComponentStory<typeof Avatar> = (args) => (
 
 StackedAvatars.parameters = {
   docs: {
-    storyDescription: "!",
+    storyDescription: "그룹으로 묶고자 할 때 사용가능합니다.",
   },
 };
 
-export const WithDots: ComponentStory<typeof Avatar> = (args) => (
+export const WithDots: ComponentStory<typeof Avatar> = () => (
   <HStack>
     <Avatar
       hasDotIndicator
@@ -161,6 +162,6 @@ export const WithDots: ComponentStory<typeof Avatar> = (args) => (
 
 WithDots.parameters = {
   docs: {
-    storyDescription: "!",
+    storyDescription: "아바타에 상태를 표시하고 싶을 때 사용할 수 있습니다.",
   },
 };

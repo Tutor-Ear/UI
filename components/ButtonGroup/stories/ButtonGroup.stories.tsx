@@ -8,7 +8,7 @@ export default {
   title: "Components/ButtonGroup",
   component: ButtonGroup,
   parameters: {
-    componentSubtitle: "Subtitle!!",
+    componentSubtitle: "버튼을 그룹으로 묶어보자",
   },
 } as ComponentMeta<typeof ButtonGroup>;
 

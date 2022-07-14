@@ -6,7 +6,7 @@ export default {
   title: "Components/Slider(Unstable)",
   component: Slider,
   parameters: {
-    componentSubtitle: "Subtitle!",
+    componentSubtitle: "Test",
   },
 } as ComponentMeta<typeof Slider>;
 

@@ -1,7 +1,7 @@
 import { UIComponent } from "@tutor-ear/ui/system";
 import { __DEV__ } from "@tutor-ear/ui/utils";
 import clsx from "clsx";
-import * as React from "react";
+import React, { FC } from "react";
 
 import style from "./Avatar.module.css";
 import { AvatarProps, AvatarSizeValue, AvatarStackProps } from "./AvatarProps";
@@ -18,11 +18,10 @@ export const AvatarStack: UIComponent<"div", AvatarStackProps> = (props) => {
 };
 
 /**
- * s
  * @param param0
  * @returns
  */
-const Avatar: React.FC<AvatarProps> = ({
+const Avatar: FC<AvatarProps> = ({
   size = "sm",
   hasBorder = false,
   pingEffect = false,
