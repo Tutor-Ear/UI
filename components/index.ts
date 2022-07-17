@@ -13,4 +13,5 @@ export { default as Modal } from "./Modal";
 export { default as Radio } from "./Radio";
 export * from "./Radio";
 export { default as Slider } from "./Slider";
+export { Tab, TabGroup, TabList, TabPanel, TabPanels } from "./Tabs";
 // export * from "./Select";
